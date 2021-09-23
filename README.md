@@ -1,2 +1,2 @@
-# unbuntu-learning
-unbuntu learning
+# ubuntu-learning
+ubuntu learning
