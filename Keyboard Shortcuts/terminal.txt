@@ -1,0 +1,3 @@
+Ctrl+Shift+C : copy
+Ctrl+Shift+V : paste
+Shift+Insert : paste (In some cases, I can't paste data stored in clipboard from Intellij or Netbeans IDE)
