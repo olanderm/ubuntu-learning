@@ -1,0 +1,6 @@
+C:\Users\Administrator\source\repos\DesignPattern\State\bin\Debug\State.exe
+C:\Users\Administrator\source\repos\DesignPattern\State\bin\Debug\State.pdb
+C:\Users\Administrator\source\repos\DesignPattern\State\obj\Debug\State.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\DesignPattern\State\obj\Debug\State.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\DesignPattern\State\obj\Debug\State.exe
+C:\Users\Administrator\source\repos\DesignPattern\State\obj\Debug\State.pdb

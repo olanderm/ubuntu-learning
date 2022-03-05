@@ -1,1 +1,18 @@
 /Ted‘s Summary-tmp.docx
+/DesignPattern/Adapter/
+DesignPattern/Bridge/
+*.obj
+*.pdb
+*.cache
+*.exe
+/Debug/*
+*/obj/*
+/DesignPattern/DesignPattern/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttributes.cs
+/DesignPattern/DesignPattern/obj/Debug/DesignPattern.csproj.FileListAbsolute.txt
+/DesignPattern/DesignPattern/obj/Debug/Prototype.csproj.FileListAbsolute.txt
+/DesignPattern/Observer/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttributes.cs
+/DesignPattern/Observer/obj/Debug/Observer.csproj.FileListAbsolute.txt
+/DesignPattern/ObserverRealCode/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttributes.cs
+/DesignPattern/ObserverRealCode/obj/Debug/ObserverRealCode.csproj.FileListAbsolute.txt
+/DesignPattern/State/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttributes.cs
+/DesignPattern/ConsoleApp1/obj/Debug/StateRealCode.csproj.FileListAbsolute.txt
