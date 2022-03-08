@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "State", "State\State.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateRealCode", "ConsoleApp1\StateRealCode.csproj", "{D876D357-C6D8-41A0-A297-54D42801116D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LanguageRef", "LanguageRef\LanguageRef.csproj", "{6181C3D4-8FD7-4AFA-AF94-E87219228CFE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{D876D357-C6D8-41A0-A297-54D42801116D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D876D357-C6D8-41A0-A297-54D42801116D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D876D357-C6D8-41A0-A297-54D42801116D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6181C3D4-8FD7-4AFA-AF94-E87219228CFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6181C3D4-8FD7-4AFA-AF94-E87219228CFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6181C3D4-8FD7-4AFA-AF94-E87219228CFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6181C3D4-8FD7-4AFA-AF94-E87219228CFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
