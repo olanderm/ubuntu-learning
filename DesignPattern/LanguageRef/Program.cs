@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Linq;
 using System.Diagnostics;
+using System.Diagnostics;
+using System.Collections;
 
 [Flags]
 public enum Days
@@ -19,7 +21,7 @@ public enum Days
 public class FlagsEnumExample
 {
 
-    public int Age {get; set;}
+    public int Age { get; set; }
     public static void Main()
     {
 
@@ -43,9 +45,9 @@ public class FlagsEnumExample
         var a = (Days)37;
         Console.WriteLine(a);
 
-        
+
         var d = 0.234;
-             Console.WriteLine($"{d}");
+        Console.WriteLine($"{d}");
 
         // Data source.
         int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
@@ -87,7 +89,130 @@ public class FlagsEnumExample
         Trace.Assert(x == 5000, "Fail");
         for (int i = 0; i < x; i++)
         {
-          //  Console.Error.WriteLine($"{i}");
+            //  Console.Error.WriteLine($"{i}");
+        }
+
+        ArrayList arrInts = new ArrayList();
+        arrInts.Add(1);
+        arrInts.Add(2);
+        int tempI = (int)arrInts[0];
+
+        Animals dogs = new Animals();
+
+        dogs.Add(new Animal("PiPi"));
+
+        foreach (Animal dog in dogs)
+        {
+            Console.WriteLine(dog.Name.ToString());
+        }
+
+        BaseClass bc = new BaseClass();
+        DerivedClass dc = new DerivedClass();
+        BaseClass bcdc = new DerivedClass();
+
+        bc.Method1();
+        bc.Method2();
+        dc.Method1();
+        dc.Method2();
+        bcdc.Method1();
+        bcdc.Method2();
+
+        /*        
+        Base - Method1
+        Base - Method2
+        Base - Method1
+        Derived - Method2
+        Base - Method1
+        Base - Method2*/
+
+        /*
+         Base - Method1
+Base - Method2
+Base - Method1
+Derived - Method2
+Base - Method1
+Derived - Method2
+         */
+
+        CountNumber cnum = new CountNumber();
+
+        foreach(int s in cnum)
+        {
+
+            Console.WriteLine($"{s}");
+        }
+    }
+
+    class BaseClass
+    {
+        public void Method1()
+        {
+            Console.WriteLine("Base - Method1");
+        }
+        public virtual void Method2()
+        {
+            Console.WriteLine("Base - Method2");
+        }
+    }
+
+    class DerivedClass : BaseClass
+    {
+        public override void Method2()
+        {
+            Console.WriteLine("Derived - Method2");
+        }
+    }
+
+    class Animal
+    {
+        private string _name;
+        public Animal(string name) { _name = name; }
+        public string Name
+        {
+        get {return _name;}
+        }
+    }
+
+    class Animals : CollectionBase
+    {
+        private string dogname;
+        public void Add(Animal newAnimal)
+        {
+            List.Add(newAnimal);
+        }
+
+        public Animals() {  }
+
+        public Animal this[int index]
+        {
+            get { return (Animal)List[index]; }
+            set { List[index] = value; }
+        }
+    }
+
+    class AnimalsDictionary : DictionaryBase
+    {
+
+    }
+
+    class CountNumber
+    {
+        int [] p =  new int [4];
+
+        public CountNumber()
+        {
+            p[0] = 0;
+            p[1] = 1;
+            p[2] = 2;
+            p[3] = 3;
+        }
+
+        public IEnumerator GetEnumerator()
+        {
+            for (int i = 0; i < 4; i++)
+            {
+                yield return i;
+            }
         }
     }
 }
