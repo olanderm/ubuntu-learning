@@ -215,4 +215,42 @@ Derived - Method2
             }
         }
     }
+
+    public class Content : ICloneable
+    {
+        public int Val;
+        public object Clone()
+        {
+            Content clc = new Content();
+            clc.Val = Val;
+            return clc;
+        }
+    }
+
+    public class Cloner: ICloneable
+    {
+        public Content MyContent = new Content();
+
+        public Cloner(int newVal)
+        {
+            MyContent.Val = newVal;
+        }
+
+        public Cloner()
+        { }
+
+        public object GetCopy()
+        {
+            return MemberwiseClone();
+        }
+
+        public object Clone()
+        {
+            Cloner clc = new Cloner();
+            clc.MyContent = MyContent.Clone() as Content;
+            return clc;
+        }
+    }
+
+
 }
